@@ -43,7 +43,7 @@ const people = (() => {
   // delete person bridge between DOM and delete person function
 
   // event listeners, it is possible to listen many others events like keys, touches
-  button.addEventListener('click', addPersonHandler);
+  // add add person handler on button
   // add delete person handler on list element
 
   /* get person html item function for creating person label
@@ -68,7 +68,7 @@ const people = (() => {
     to the root of the list
   */
 
-  // invoke render function
+  // invoke render function as example with fake array
 
 
   /* returning functions from module allows us to interact with people module
