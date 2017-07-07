@@ -18,35 +18,35 @@ const createElement = (type, params = {}) => {
   return elem;
 };
 
-// clear html function - invoked every time render function is invoked
+// 11 clear html function - invoked every time render function is invoked
 
 /* people module - helps us hide internal variables, functions, implementation
   allow us to expose functions - add person, delete person
 */
 
 const people = (() => {
-  // array for holding names' people ['Przemek', 'Paweł']
+  // 1 array for holding names' people ['Przemek', 'Paweł']
 
-  // variables for keeping in memory html elements for instance h1, span, div
+  // 2,3,4,10 variables for keeping in memory html elements for instance h1, span, div
 
-  // add person function, taking as parameter person's name
+  // 7 add person function, taking as parameter person's name
   const addPerson = (name) => {
 
   };
-  // delete person function, taking as parameter index of people array
+  // 15 delete person function, taking as parameter index of people array
 
-  // add person bridge between DOM and add person function
+  // 6 add person bridge between DOM and add person function
   const addPersonHandler = () => {
     addPerson(input.value);
   };
 
-  // delete person bridge between DOM and delete person function
+  // 14 delete person bridge between DOM and delete person function
 
   // event listeners, it is possible to listen many others events like keys, touches
-  // add add person handler on button
-  // add delete person handler on list element
+  // 5 add add person handler on button
+  // 13 add delete person handler on list element
 
-  /* get person html item function for creating person label
+  /* 9 get person html item function for creating person label
   */
   const getPersonHtmlItem = (name) => {
       const li = createElement('li');
@@ -63,7 +63,7 @@ const people = (() => {
       return li;
   };
 
-  /* defining render function, it should clear previous content of the list
+  /* 8 defining render function, it should clear previous content of the list
     iterate over people array, creating (get) person html item and append it
     to the root of the list
   */
@@ -71,7 +71,7 @@ const people = (() => {
   // invoke render function as example with fake array
 
 
-  /* returning functions from module allows us to interact with people module
+  /* 12,16 returning functions from module allows us to interact with people module
     as you can see object is returned
   */
   return {
