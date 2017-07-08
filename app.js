@@ -26,7 +26,7 @@ const createElement = (type, params = {}) => {
 
 const people = (() => {
   // 1 array for holding names' people ['Przemek', 'Paweł']
-
+  const people = [];
   // 2,3,4,10 variables for keeping in memory html elements for instance h1, span, div
 
   // 7 add person function, taking as parameter person's name
